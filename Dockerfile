@@ -1,7 +1,7 @@
-FROM ubuntu:16.04
+FROM alpine:latest
 
 RUN \
-  apt-get update && \
-  apt-get install git python-dev python-pip build-essential libjpeg8-dev && \
+  apk update && \
+  apk add git python py-pip mariadb-dev syslinux-dev linux-headers make g++ zlib-dev dev86 gcc libjpeg-turbo syslinux-dev && \
   pip install awsebcli && \
   pip install awscli
