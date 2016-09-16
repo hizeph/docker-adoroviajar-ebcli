@@ -1,4 +1,4 @@
-FROM  ubuntu:16.04
+FROM phusion/baseimage:16.04
 
 RUN \
   apt-get update && \
